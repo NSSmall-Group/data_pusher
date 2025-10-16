@@ -1,0 +1,199 @@
+{
+    "nodes": [
+        {
+            "id": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "label": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccb5RtrT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o exploit /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. /tmp/ccBVcRRl.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o 393.62506103515625",
+            "score": 393.62506103515625,
+            "shape": "box"
+        },
+        {
+            "id": "4fc0072419e050f0517b6b5f9cc1bc42",
+            "label": "chmod +x exploit 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "5e61875979c1bee6272596fa611dc8b5",
+            "label": "cc1 -quiet -imultiarch x86_64-linux-gnu exploit.c -quiet -dumpbase exploit.c -mtune=generic -march=x86-64 -auxbase exploit -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccbChpjO.s 500.7231750488281",
+            "score": 500.7231750488281,
+            "shape": "box"
+        },
+        {
+            "id": "773730292d09a1eb07e825288e20d368",
+            "label": "mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid 206.2694854736328",
+            "score": 206.2694854736328,
+            "shape": "box"
+        },
+        {
+            "id": "7f345122167c01964dd184a7e8ddde5b",
+            "label": "/tmp/ccBVcRRl.o 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "01331d51b9e183f5d14de214f82576d1",
+            "label": "127.0.0.136170->127.0.0.13306 0",
+            "score": 0,
+            "shape": "diamond"
+        },
+        {
+            "id": "04967362dbd6b713e1accd2e936376fc",
+            "label": "date +%s%N 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "1ea9596147db624bf2572972e01877ae",
+            "label": "as --64 -o /tmp/ccBVcRRl.o /tmp/ccbChpjO.s 107.41754150390625",
+            "score": 107.41754150390625,
+            "shape": "box"
+        },
+        {
+            "id": "4dba459beccbf6238a0f417456c41e30",
+            "label": "cut -b1-13 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "5ceb2e007c0fe29ac832507ec6809b3f",
+            "label": "/usr/lib/x86_64-linux-gnu/Scrt1.o 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "label": "/dev/urandom 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "8c479f34f150d30b1ed5aee63ac581c2",
+            "label": "/etc/localtime 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "780b3dad16790f37b98950258ad2ffbc",
+            "label": "hydra -l root -P password.txt localhost mysql 413.2011413574219",
+            "score": 413.2011413574219,
+            "shape": "box"
+        },
+        {
+            "id": "7c509c7272f909f9f7766dcb015f5615",
+            "label": "bash -i 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "374950e80afea9896f4305fcb07eed7f",
+            "label": "/usr/share/locale/locale.alias 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "34202569855c04ab190c4331b94e6241",
+            "label": "/var/log/mysql/error.log 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "60c4e3c5d5291348e2c7b4f93a2c6f9d",
+            "label": "/tmp/ccnqz8ft.le 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "28c06ba51b054838675cbf161000789b",
+            "label": "/usr/lib/x86_64-linux-gnu/libopcodes-2.30-system.so 0",
+            "score": 0,
+            "shape": "ellipse"
+        }
+    ],
+    "edges": [
+        {
+            "source": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "target": "5ceb2e007c0fe29ac832507ec6809b3f",
+            "e_type": "read"
+        },
+        {
+            "source": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "target": "7f345122167c01964dd184a7e8ddde5b",
+            "e_type": "read"
+        },
+        {
+            "source": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "target": "28c06ba51b054838675cbf161000789b",
+            "e_type": "read"
+        },
+        {
+            "source": "057e8a224ea525b6f9ff84f60dd19d4d",
+            "target": "60c4e3c5d5291348e2c7b4f93a2c6f9d",
+            "e_type": "read"
+        },
+        {
+            "source": "5e61875979c1bee6272596fa611dc8b5",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "5e61875979c1bee6272596fa611dc8b5",
+            "target": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "e_type": "read"
+        },
+        {
+            "source": "5e61875979c1bee6272596fa611dc8b5",
+            "target": "7f345122167c01964dd184a7e8ddde5b",
+            "e_type": "write"
+        },
+        {
+            "source": "773730292d09a1eb07e825288e20d368",
+            "target": "01331d51b9e183f5d14de214f82576d1",
+            "e_type": "read"
+        },
+        {
+            "source": "773730292d09a1eb07e825288e20d368",
+            "target": "34202569855c04ab190c4331b94e6241",
+            "e_type": "write"
+        },
+        {
+            "source": "04967362dbd6b713e1accd2e936376fc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "1ea9596147db624bf2572972e01877ae",
+            "target": "28c06ba51b054838675cbf161000789b",
+            "e_type": "read"
+        },
+        {
+            "source": "1ea9596147db624bf2572972e01877ae",
+            "target": "7f345122167c01964dd184a7e8ddde5b",
+            "e_type": "read"
+        },
+        {
+            "source": "1ea9596147db624bf2572972e01877ae",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "780b3dad16790f37b98950258ad2ffbc",
+            "e_type": "clone"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "01331d51b9e183f5d14de214f82576d1",
+            "e_type": "read"
+        }
+    ]
+}

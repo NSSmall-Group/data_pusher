@@ -1,0 +1,224 @@
+{
+    "nodes": [
+        {
+            "id": "780b3dad16790f37b98950258ad2ffbc",
+            "label": "hydra -l root -P password.txt localhost mysql 414.48736572265625",
+            "score": 414.48736572265625,
+            "shape": "box"
+        },
+        {
+            "id": "5c6c017fac4accef8dc973e6d51056c0",
+            "label": "as --64 -o /tmp/ccsTwtib.o /tmp/ccMRWoHJ.s 116.76799011230469",
+            "score": 116.76799011230469,
+            "shape": "box"
+        },
+        {
+            "id": "04967362dbd6b713e1accd2e936376fc",
+            "label": "date +%s%N 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "4dba459beccbf6238a0f417456c41e30",
+            "label": "cut -b1-13 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "34202569855c04ab190c4331b94e6241",
+            "label": "/var/log/mysql/error.log 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "label": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHvOyUC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o exploit /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. /tmp/ccsTwtib.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o 380.9443664550781",
+            "score": 380.9443664550781,
+            "shape": "box"
+        },
+        {
+            "id": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "label": "/dev/urandom 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "7c509c7272f909f9f7766dcb015f5615",
+            "label": "bash -i 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "482e4f4b245f2fc0ac7df8b178367015",
+            "label": "/tmp/cclQ1Tfa.le 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "4b9cb2c17aee60015d9e30c558f44a37",
+            "label": "/lib/x86_64-linux-gnu/libc.so.6 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "374950e80afea9896f4305fcb07eed7f",
+            "label": "/usr/share/locale/locale.alias 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "5ceb2e007c0fe29ac832507ec6809b3f",
+            "label": "/usr/lib/x86_64-linux-gnu/Scrt1.o 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "8c479f34f150d30b1ed5aee63ac581c2",
+            "label": "/etc/localtime 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "6c62c86e06a0f34fd81c4151667deefb",
+            "label": "cc1 -quiet -imultiarch x86_64-linux-gnu exploit.c -quiet -dumpbase exploit.c -mtune=generic -march=x86-64 -auxbase exploit -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccMRWoHJ.s 490.7083740234375",
+            "score": 490.7083740234375,
+            "shape": "box"
+        },
+        {
+            "id": "4fc0072419e050f0517b6b5f9cc1bc42",
+            "label": "chmod +x exploit 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "6ab2da2a8cc8a97596290c78bd96cd7b",
+            "label": "/tmp/ccsTwtib.o 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "9bde23c8ac9242a5c2aee1d2e1b58730",
+            "label": "/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "773730292d09a1eb07e825288e20d368",
+            "label": "mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid 188.85292053222656",
+            "score": 188.85292053222656,
+            "shape": "box"
+        }
+    ],
+    "edges": [
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "780b3dad16790f37b98950258ad2ffbc",
+            "e_type": "clone"
+        },
+        {
+            "source": "5c6c017fac4accef8dc973e6d51056c0",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "5c6c017fac4accef8dc973e6d51056c0",
+            "target": "6ab2da2a8cc8a97596290c78bd96cd7b",
+            "e_type": "read"
+        },
+        {
+            "source": "5c6c017fac4accef8dc973e6d51056c0",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "5c6c017fac4accef8dc973e6d51056c0",
+            "target": "9bde23c8ac9242a5c2aee1d2e1b58730",
+            "e_type": "read"
+        },
+        {
+            "source": "04967362dbd6b713e1accd2e936376fc",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "04967362dbd6b713e1accd2e936376fc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "4dba459beccbf6238a0f417456c41e30",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "9bde23c8ac9242a5c2aee1d2e1b58730",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "5ceb2e007c0fe29ac832507ec6809b3f",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "6ab2da2a8cc8a97596290c78bd96cd7b",
+            "e_type": "read"
+        },
+        {
+            "source": "8de9cb0337cfcf029e041d7bc4d6846b",
+            "target": "482e4f4b245f2fc0ac7df8b178367015",
+            "e_type": "read"
+        },
+        {
+            "source": "6c62c86e06a0f34fd81c4151667deefb",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "6c62c86e06a0f34fd81c4151667deefb",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "6c62c86e06a0f34fd81c4151667deefb",
+            "target": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "e_type": "read"
+        },
+        {
+            "source": "6c62c86e06a0f34fd81c4151667deefb",
+            "target": "6ab2da2a8cc8a97596290c78bd96cd7b",
+            "e_type": "write"
+        },
+        {
+            "source": "4fc0072419e050f0517b6b5f9cc1bc42",
+            "target": "4b9cb2c17aee60015d9e30c558f44a37",
+            "e_type": "read"
+        },
+        {
+            "source": "773730292d09a1eb07e825288e20d368",
+            "target": "34202569855c04ab190c4331b94e6241",
+            "e_type": "write"
+        }
+    ]
+}

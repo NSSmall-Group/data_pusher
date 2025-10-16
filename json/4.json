@@ -1,0 +1,159 @@
+{
+    "nodes": [
+        {
+            "id": "780b3dad16790f37b98950258ad2ffbc",
+            "label": "hydra -l root -P password.txt localhost mysql 436.7167663574219",
+            "score": 436.7167663574219,
+            "shape": "box"
+        },
+        {
+            "id": "04967362dbd6b713e1accd2e936376fc",
+            "label": "date +%s%N 38.4317910799803",
+            "score": 38.4317910799803,
+            "shape": "box"
+        },
+        {
+            "id": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "label": "/dev/urandom 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "5ceb2e007c0fe29ac832507ec6809b3f",
+            "label": "/usr/lib/x86_64-linux-gnu/Scrt1.o 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "374950e80afea9896f4305fcb07eed7f",
+            "label": "/usr/share/locale/locale.alias 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "28c06ba51b054838675cbf161000789b",
+            "label": "/usr/lib/x86_64-linux-gnu/libopcodes-2.30-system.so 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "09028c21b1a92be1bcae421e5dfab9cf",
+            "label": "/proc/26629/cgroup 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "773730292d09a1eb07e825288e20d368",
+            "label": "mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid 200.7310028076172",
+            "score": 200.7310028076172,
+            "shape": "box"
+        },
+        {
+            "id": "7d8f50d067e8e4f9d5bf221422a8dd39",
+            "label": "/tmp/cc2YK0mp.ld 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "8c479f34f150d30b1ed5aee63ac581c2",
+            "label": "/etc/localtime 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "7c509c7272f909f9f7766dcb015f5615",
+            "label": "bash -i 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "34202569855c04ab190c4331b94e6241",
+            "label": "/var/log/mysql/error.log 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "077841613345c1be630984eb2008bee4",
+            "label": "cc1 -quiet -imultiarch x86_64-linux-gnu exploit.c -quiet -dumpbase exploit.c -mtune=generic -march=x86-64 -auxbase exploit -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccwZSWif.s 507.64971923828125",
+            "score": 507.64971923828125,
+            "shape": "box"
+        },
+        {
+            "id": "8d51e6063741a3fd7a79976b4eedbe7a",
+            "label": "nautilus --gapplication-service 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "4dba459beccbf6238a0f417456c41e30",
+            "label": "cut -b1-13 0",
+            "score": 0,
+            "shape": "box"
+        },
+        {
+            "id": "4fc0072419e050f0517b6b5f9cc1bc42",
+            "label": "chmod +x exploit 31.28249168395996",
+            "score": 31.28249168395996,
+            "shape": "box"
+        },
+        {
+            "id": "4291843267c7ffb70bd9ccde7b68c930",
+            "label": "/proc/26629/comm 0",
+            "score": 0,
+            "shape": "ellipse"
+        },
+        {
+            "id": "330d4b966598abe755e9e77b0d58091b",
+            "label": "127.0.0.160308->127.0.0.13306 0",
+            "score": 0,
+            "shape": "diamond"
+        }
+    ],
+    "edges": [
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "780b3dad16790f37b98950258ad2ffbc",
+            "e_type": "clone"
+        },
+        {
+            "source": "780b3dad16790f37b98950258ad2ffbc",
+            "target": "330d4b966598abe755e9e77b0d58091b",
+            "e_type": "read"
+        },
+        {
+            "source": "04967362dbd6b713e1accd2e936376fc",
+            "target": "8c479f34f150d30b1ed5aee63ac581c2",
+            "e_type": "read"
+        },
+        {
+            "source": "773730292d09a1eb07e825288e20d368",
+            "target": "330d4b966598abe755e9e77b0d58091b",
+            "e_type": "write"
+        },
+        {
+            "source": "773730292d09a1eb07e825288e20d368",
+            "target": "34202569855c04ab190c4331b94e6241",
+            "e_type": "write"
+        },
+        {
+            "source": "077841613345c1be630984eb2008bee4",
+            "target": "374950e80afea9896f4305fcb07eed7f",
+            "e_type": "read"
+        },
+        {
+            "source": "077841613345c1be630984eb2008bee4",
+            "target": "7fd7b927c2af91a95845acb3a5a6a9c3",
+            "e_type": "read"
+        },
+        {
+            "source": "8d51e6063741a3fd7a79976b4eedbe7a",
+            "target": "8d51e6063741a3fd7a79976b4eedbe7a",
+            "e_type": "clone"
+        }
+    ]
+}
