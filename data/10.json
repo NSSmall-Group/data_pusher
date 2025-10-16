@@ -1,0 +1,98 @@
+{
+    "detection_info": [
+        {
+            "detection_duration_time": "20s",
+            "detection_id": "30001",
+            "use_yzn": 0
+        },
+        {
+            "detection_duration_time": "12s",
+            "detection_id": "30001",
+            "use_yzn": 1
+        },
+        {
+            "detection_duration_time": "18s",
+            "detection_id": "30002",
+            "use_yzn": 0
+        },
+        {
+            "detection_duration_time": "13s",
+            "detection_id": "30002",
+            "use_yzn": 1
+        },
+        {
+            "detection_duration_time": "19s",
+            "detection_id": "30003",
+            "use_yzn": 0
+        },
+        {
+            "detection_duration_time": "11s",
+            "detection_id": "30003",
+            "use_yzn": 1
+        }
+    ],
+    "trace_info": [
+        {
+            "trace_duration_time": "5s",
+            "trace_id": "40001",
+            "use_yzn": 0
+        },
+        {
+            "trace_duration_time": "2s",
+            "trace_id": "40001",
+            "use_yzn": 1
+        },
+        {
+            "trace_duration_time": "6s",
+            "trace_id": "40002",
+            "use_yzn": 0
+        },
+        {
+            "trace_duration_time": "1s",
+            "trace_id": "40002",
+            "use_yzn": 1
+        },
+        {
+            "trace_duration_time": "7s",
+            "trace_id": "40003",
+            "use_yzn": 0
+        },
+        {
+            "trace_duration_time": "2s",
+            "trace_id": "40003",
+            "use_yzn": 1
+        }
+    ],
+    "detection_accuracy_info": [
+        {
+            "detection_accuracy_id": "50001",
+            "detection_accuracy": "80%",
+            "use_yzn": 0
+        },
+        {
+            "detection_accuracy_id": "50001",
+            "detection_accuracy": "80%",
+            "use_yzn": 1
+        },
+        {
+            "detection_accuracy_id": "50002",
+            "detection_accuracy": "70%",
+            "use_yzn": 0
+        },
+        {
+            "detection_accuracy_id": "50002",
+            "detection_accuracy": "70%",
+            "use_yzn": 1
+        },
+        {
+            "detection_accuracy_id": "50003",
+            "detection_accuracy": "90%",
+            "use_yzn": 0
+        },
+        {
+            "detection_accuracy_id": "50003",
+            "detection_accuracy": "90%",
+            "use_yzn": 1
+        }
+    ]
+}

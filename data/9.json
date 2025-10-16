@@ -1,0 +1,8 @@
+{
+  "graph_id": "unique_graph_1",
+  "complete_graph": {
+    "data_process": "50s",
+    "attack_detection": "20s",
+    "tracing_detection": "10s"
+  }
+}
