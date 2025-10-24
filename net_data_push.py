@@ -14,7 +14,7 @@ def push_topologyInfo():
             device_file = json.load(file)
             nodes = device_file['nodes']
             edges = device_file['edges']
-            response= push_topology_ns3('unique_graph_1',nodes,edges)
+            response= push_topology_ns3('unique_graph_'+str(n+1),nodes,edges)
             print(response)
         print()
         #exit() #用于测试
@@ -64,16 +64,17 @@ def push_detection_data():
 def push_attack_info():
     print("上传攻击数据...")
     path = 'data/11.json'
-    with open(path, 'r', encoding='utf-8') as file:
-        att_info = json.load(file)
-        att_info["id"] = att_info.pop("id")
-        att_info["time"] = att_info.pop("时间")
-        att_info["attack_sign"] = att_info.pop("恶意攻击标识")
-        att_info["detection_time"] = att_info.pop("检测时长")
-        att_info["investigation_time"] = att_info.pop("溯源时长")
-        #print(att_info)
-        #exit() #用于测试
-    response = push_attack_Info(att_info)
+    for i in range(100):
+        with open(path, 'r', encoding='utf-8') as file:
+            att_info = json.load(file)
+            att_info["id"] = "unique_graph_"+str(i+1)
+            att_info["time"] = att_info.pop("时间")
+            att_info["attack_sign"] = att_info.pop("恶意攻击标识")
+            att_info["detection_time"] = att_info.pop("检测时长")
+            att_info["investigation_time"] = att_info.pop("溯源时长")
+            #print(att_info)
+            #exit() #用于测试
+        response = push_attack_Info(att_info)
     print("风险分析数据上传响应:", response)
 
 
@@ -84,3 +85,4 @@ if __name__ == "__main__":
     #push_timeLine()  # 上传攻击检测评估1
     #push_detection_data()  # 上传攻击检测数据
     #push_attack_info()  # 上传攻击检测评估2
+
